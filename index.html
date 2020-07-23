@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calcular calorias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
+    <!-- <script type="text/javascript" src="../engineJS/engine.js"> -->
+    <script type="text/javascript" src="./js/script.js"></script>
+  </head>
+  <body>
+    <form class="calcKcal" name="kcal-data">
+      <h4>Gasto energético en reposo</h4>
+      <label for="sx">
+        <i></i>
+        <select id="sx" name="sx">
+        <option value="m">Masculino</option>
+        <option value="f">Femenino</option>
+      </select>
+    </label>
+    <label for="at">
+      <i></i>
+      <input type="text" validate="" placeholder="Altura en cm" id="at" name="at">
+    </label>
+    <label for="ps">
+      <i></i>
+      <input type="text" placeholder="Peso en Kg" id="ps" name="ps">
+    </label>
+    <label for="ed">
+      <i></i>
+      <input type="text" placeholder="Edad" id="ed" name="ed">
+    </label>
+    <!-- <a id="ClearValues" style="cursor: pointer">Reset</a> -->
+    <a id="result-calc"></a>
+    </form>
+    <table id="descriptions" style="display: none">
+      <tr>
+        <td colspan="2">Segun tu actividad fisica</td>
+      </tr>
+      <tr title="1 a 3 días a la semana">
+        <td>Poco o nula </td>
+        <td id="kd1"></td>
+        <td>Kcal</td>
+      </tr>
+      <tr title="3 a 5 días a la semana">
+        <td>Ligero </td>
+        <td id="kd2"></td>
+        <td>Kcal</td>
+      </tr>
+      <tr title="6-7 días a la semana">
+        <td>Frecuente</td>
+        <td id="kd3"></td>
+        <td>Kcal</td>
+      </tr>
+      <tr title="Entrenamientos diarios mañana y tarde">
+        <td>Atleta </td>
+        <td id="kd4"></td>
+        <td>Kcal</td>
+      </tr>
+    </table>
+    <i class="breakpv"></i>
+  </body>
+</html>
